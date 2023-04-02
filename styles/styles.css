@@ -13,7 +13,7 @@ html {
     background-color: rgba(246, 242, 242, 1);
 }
 
-/* navigation */
+/* Navigation */
 
 .navigation {
     display: flex;
@@ -28,7 +28,7 @@ html {
     background: rgba(0, 0, 0, 0.8);
 }
 
-.nav__menu {
+.navigation__menu {
     display: flex;
     flex-wrap: wrap;
 }
@@ -64,7 +64,7 @@ html {
     text-transform: uppercase;
 }
 
-/* acquaintance-intro */
+/* Inital-acquaintance */
 
 .initial__content {
     display: flex;
@@ -194,7 +194,7 @@ html {
     box-sizing: border-box;
 }
 
-/* services */
+/* Services */
 
 .services__lead_right::before {
     display: block;
@@ -215,7 +215,7 @@ html {
     width: 100%;
     max-width: 610px;
 }
-/*Не отображается font-weight: 500*/
+
 .service__heading {
     font-family: 'Open Sans SemiBold Italic';
     margin: 0;
@@ -403,7 +403,7 @@ html {
     position: absolute;
 }
 
-/* team */
+/* Team */
 
 .team {
     justify-content: flex-start;
@@ -652,7 +652,7 @@ html {
     box-shadow: inset 5px 5px 5px rgba(84, 72, 72, 0.4);
 }
 
-/* Subscribe contacts */
+/* Connection-contacts */
 
 .connection-contacts {
     display: flex;
@@ -673,7 +673,7 @@ html {
     background-color: rgba(45, 45, 45, 1);
 }
 
-/* Subscribe */
+/* Connection-block */
 
 .connection__block_left {
     width: 100%;
@@ -736,7 +736,6 @@ html {
 }
 
 .connection__input {
-    color: rgba(0, 0, 0, 1);
     background-color: rgba(0, 0, 0, 0.1);
     border: none;
     border-radius: 5px;
@@ -745,6 +744,10 @@ html {
     margin-top: 44px;
     align-items: center;
     padding-left: 53px;
+}
+
+.connection__input::placeholder {
+    color: rgba(0, 0, 0, 1);
 }
 
 .connection__input_name, .connection__input_mail {
