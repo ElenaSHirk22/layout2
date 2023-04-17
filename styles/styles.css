@@ -107,7 +107,7 @@ html {
     margin-bottom: 19px;
 }
 
-.intro__text {
+.section__text {
     font-family: 'Open Sans';
     margin: 0;
     line-height: 28px;
@@ -115,13 +115,7 @@ html {
     margin-bottom: 50px;
 }
 
-.button-login_red {
-    color: rgba(255, 255, 255, 1);
-    background-color: rgba(255, 45, 45, 1);
-    border: none;
-}
-
-.button-login {
+.section__button_red {
     display: flex;
     flex-wrap: wrap;
     align-content: center;
@@ -138,14 +132,17 @@ html {
     text-decoration: none;
     border-radius: 5px;
     margin-top: 63px;
+    border: none;
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(255, 45, 45, 1);
 }
 
-.button-login_red:hover {
+.section__button_red:hover {
     cursor: pointer;
-    background-color: rgb(177, 25, 25);
+    background-color: rgb(205, 45, 45);
 }
 
-.button-login:focus {
+.section__button_red:focus {
     vertical-align: middle;
     box-shadow: inset 5px 5px 5px rgba(84, 72, 72, 0.698);
 }
@@ -242,14 +239,14 @@ html {
     text-transform: uppercase;
 }
 
-.button-login_white {
+.service__button {
     background-color: rgba(0, 0, 0, 0);
     color: rgba(255, 45, 45, 1);
     border: 2px solid rgba(255, 0, 0, 1);
 }
 
-.button-login_white:hover {
-    cursor: pointer;
+.service__button:hover {
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
 .services {
@@ -328,6 +325,8 @@ html {
     background: rgba(255, 45, 45, 1);
 }
 
+/* Product */
+
 .product__picture {
     width: 100%;
     max-width: 300px;
@@ -336,21 +335,19 @@ html {
 }
 
 .products__type {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    gap: 60px;
+    grid-auto-flow: column;
     justify-content: center;
     height: 100%;
     margin: 0;
-    padding: 0;
     min-height: 24px;
     width: 100%;
     list-style: none;
     margin-bottom: 55px;
-    
 }
 
 .product__item {
-    padding: 0 35px;
     letter-spacing: 0.22px;
 }
 
@@ -361,46 +358,59 @@ html {
     text-decoration: none;
 }
 
-.product__block {
-    width: 100%;
-    max-width: 1300px;
+.product {
+    display: inline-grid;
+    grid-template-columns: 1900px auto;
+    justify-content: center;
+    gap: 20px;
     max-height: 640px;
-}
-
-.product__block__upper, .product__block__lover {
+    position: relative;
     width: 100%;
 }
 
-.product__block__element {
-    display: inline-block;
-    padding: 10px 10px;
+.product__content {
+    display: grid;
+    grid-template-rows: 300px 300px;
+    justify-content: center;
+    gap: 20px;
+    grid-auto-flow: column;
     width: 100%;
-    max-width: 301px;
+    margin: 0 auto;
+    padding-left: 0;
+    list-style: none;
+}
+
+.product-overlay {
+    display: grid;
+    width: 100%;
+    max-width: 300px;
     height: 100%;
-    min-height: 293px;
-}
-.overlay {
-    left: 0;
-    bottom: 100%;
-    height: 0;
-    width: 100%;
-    overflow: hidden;
-    backdrop-filter: blur(8px) brightness(80%);
-    transition: all .3s ease-in-out;
+    min-height: 300px;
 }
 
-.product__block__element:hover {
-    bottom: 0;
-    height: 100%;
-}
-
-.product__open {
-    color:rgba(246, 242, 242, 1);
+.product__overlay-opened {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    text-decoration: none;
     margin: 0;
     padding: 0;
-    margin-top: 125px;
-    margin-left: 85px;
+    width: 100%;
+    max-width: 300px;
+    min-width: 0;
+    height: 300px;
+    transition: all .3s ease-in-out;
     position: absolute;
+    color: rgba(255, 255, 255, 0);
+}
+
+.product__overlay:hover>.product__overlay-opened {
+    cursor: pointer;
+    visibility: visible;
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(2px) brightness(80%);
 }
 
 /* Team */
@@ -410,7 +420,7 @@ html {
     background-color: rgba(255, 255, 255, 1);
     padding-right: 19px;
     box-sizing: border-box;
-    text-shadow: 0 3px 6px rgba(84, 72, 72, 0.4);
+    text-shadow: 0 3px 6px rgba(84, 72, 72, 0.5);
 }
 
 .team__header {
@@ -424,6 +434,8 @@ html {
     height: 32px;
     text-align: start;
     letter-spacing: 0.38px;
+    width: 100%;
+    max-width: 360px;
 }
 
 .team__description {
@@ -447,6 +459,7 @@ html {
     left: 180px;
     margin-left: 0px;
     background: rgba(255, 45, 45, 1);
+    box-shadow: 0 3px 6px rgba(84, 72, 72, 0.5);
 }
 
 .team__members {
@@ -484,6 +497,7 @@ html {
         display: grid;
         grid-template-columns: repeat(2, auto);
         grid-template-rows: repeat(2, auto);
+        align-items: end;
     }
     .team__main-content {
         display: contents;
@@ -496,6 +510,8 @@ html {
     flex-direction: column;
     align-self: start;
     justify-content: space-between;
+    margin-top: 10px;
+    width: 100%;
     max-width: 662px;
     grid-column: 2/3;
     grid-row: 1/2;
@@ -529,10 +545,15 @@ html {
     margin-right: 30px;
 }
 
+.team__selected-link:last-of-type {
+    margin-right: 0;
+}
+
 .members, .member {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 220px);
+    max-width: 920px;
     position: relative;
-    margin-top: 35px;
 }
 .member:not(:last-child) {
     margin-right: 18px;
@@ -543,6 +564,7 @@ html {
     justify-content: center;
     align-items: center;
     width: 100%;
+    max-width: 198px;
     visibility: hidden;
     color: rgba(255, 255, 255, 1);
     position: absolute;
@@ -625,36 +647,22 @@ html {
 }
 
 .subscribe__button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: rgba(255, 255, 255, 1);
-    font-weight: 700;
-    font-size: 18px;
-    width: 100%;
     max-width: 218px;
     height: 100%;
     min-height: 78px;
-    border: none;
-    border-radius: 5px;
-    background-color: rgba(255, 45, 45, 1);
     margin-left: 20px;
+    margin-top: 0;
     text-transform: uppercase;
 }
-
+/*
 .subscribe__button:hover {
     cursor: pointer;
-    background-color: rgb(177, 25, 25);
+    background-color: rgba(255, 45, 45, 0.3);
 }
-
-.subscribe__button:focus {
-    vertical-align: middle;
-    box-shadow: inset 5px 5px 5px rgba(84, 72, 72, 0.4);
-}
-
+*/
 /* Connection-contacts */
 
-.connection-contacts {
+.connection {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -690,7 +698,7 @@ html {
     margin-bottom: 45px;
 }
 
-.section__text {
+.connection__text {
     display: inline-block;
     position: relative;
     margin: 0 auto;
@@ -702,7 +710,7 @@ html {
     padding-bottom: 35px;
 }
 
-.section__text::after {
+.connection__text::after {
     content: "";
     position: absolute;
     bottom: 0;
@@ -770,10 +778,6 @@ html {
 
 .connection__button {
     font-weight: 700;
-    font-size: 18px;
-    line-height: 34px;
-    display: flex;
-    justify-content: center;
     align-items: center;
     width: 100%;
     max-width: 734px;
@@ -782,6 +786,7 @@ html {
     border-radius: 5px;
     text-transform: uppercase;
     letter-spacing: 0.32px;
+    
 }
 
 .connection__button:focus {
@@ -866,4 +871,46 @@ html {
 
 .footer__link {
     margin-right: 18px;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 1579px) {
+    /*
+    .intro {
+        flex-wrap: nowrap;
+    }*/
+   
+    .intro__content_left {
+        width: 50%;
+        box-sizing: border-box;
+        margin-right: 0;
+        padding-right: 16px;
+    }
+    
+    .intro__content_right {
+        width: 100%;
+        height: auto;
+    }
+    .product__block {
+        max-height: 100%;
+    }
+    .team__members {
+        
+    }
+}
+
+@media screen and (max-width: 1280px) {
+     .team__main-info {
+        
+    }
+    .team__selected_photo {
+
+    }
+}
+
+@media screen and (max-width: 1020px) {
+    .intro__heading {
+        font-size: 5vw;
+    }
 }

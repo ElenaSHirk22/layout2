@@ -7,6 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href=".//index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script async src="./js/script.js"></script>
 </head>
 <!-- PART 1 PART 1 PART 1 PART 1 PART 1 PART 1 PART 1 PART 1 PART 1 PART 1 PART 1 PART 1 PART 1 PART 1 PART 1 PART 1 PART 1 PART 1 -->
 <body class="page">
@@ -46,12 +49,12 @@
                     <h1 class="intro__heading">
                         our strong organaisation
                     </h1>
-                    <p class="intro__text">
+                    <p class="section__text">
                         Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor incididunt ut
                         labore et.
                         ectetur adig ipis cing elit, sed do eiusmod tempor incididunt.
                     </p>
-                    <button type="button" class="button-login button-login_red">
+                    <button type="button" class="section__button_red">
                         Contact Us
                     </button>
                 </div>
@@ -72,12 +75,12 @@
                 <h2 class="service__heading section__heading">
                     do you know we can provide for you ?
                 </h2>
-                <p class="intro__text">
+                <p class="section__text">
                     Lorem ipsum dolor sit amet, consectetur adipis cing elit,
                     sed do eiusmod tempor incididunt ut labore et.Lorem ni ipsum dolor sit amet,
                     consectetur adipis cing elit, ed doi eiusmod tempor incididunt ut labore et.
                 </p>
-                <button type="button" class="button-login button-login_white">
+                <button type="button" class="service__button section__button_red">
                     Learn More
                 </button>
             </div>
@@ -86,7 +89,7 @@
                     <h3 class="service__heading service__heading_mgt">
                         Management
                     </h3>
-                    <p class="intro__text">
+                    <p class="section__text">
                         Lorem ipsum dolor sitea amet, zixf conseit adipi cing elit,
                         seddi do eiusmod btdempor in didunt utlae ore etioe.Lorem ipsum new idolor
                     </p>
@@ -95,7 +98,7 @@
                     <h3 class="service__heading service__heading_uud">
                         UI /UX Design
                     </h3>
-                    <p class="intro__text">
+                    <p class="section__text">
                         Lorem ipsum dolor sitea amet, zixf conseit adipi cing elit,
                         seddi do eiusmod btdempor in didunt utlae ore etioe.Lorem ipsum new idolor
                     </p>
@@ -104,7 +107,7 @@
                     <h3 class="service__heading service__heading_lb">
                         Logo / Branding
                     </h3>
-                    <p class="intro__text">
+                    <p class="section__text">
                         Lorem ipsum dolor sitea amet, zixf conseit adipi cing elit,
                         seddi do eiusmod btdempor in didunt utlae ore etioeew idolor sit amet,
                     </p>
@@ -113,7 +116,7 @@
                     <h3 class="service__heading service__heading_anmtn">
                         Animation
                     </h3>
-                    <p class="intro__text">
+                    <p class="section__text">
                         Lorem ipsum dolor sitea amet, zixf conseit adipi cing elit,
                         seddi do eiusmod btdempor in didunt utlae ore etioeew idolor sit amet,
                     </p>
@@ -127,7 +130,7 @@
                 <h2 class="feature__appellation section__heading">
                     feature products
                 </h2>
-                <p class="feature__description intro__text">
+                <p class="feature__description section__text">
                     Lorem ipsum dolor sit amet, consectetur adipis cing elit,sed do eiusmod tempor
                     incididunt ut labore et.
                 </p>
@@ -159,88 +162,85 @@
                     </a>
                 </li>
             </ul>
-            <!-- Не проработан оверлей -->
-            <div class="product__block">
-                <div class="product__block__upper">
-                    <section class="product__block__element">
-                        <h5 class="product__open section__heading overlay">
+            <!-- Не проработан swiper(в разработке) -->
+            <div class="product">
+                <ul class="product__content">
+                    <li class="product__overlay">
+                        <a class="product__overlay-opened section__heading" href="#">
                             open
-                        </h5>
+                        </a>
                         <img class="product__picture" src="./images/product-interface1.png" alt="Продукт">
-                    </section>
-                    <section class="product__block__element">
-                        <h5 class="product__open section__heading overlay">
+                    </li>
+                    <li class="product__overlay">
+                        <a class="product__overlay-opened section__heading" href="#">
                             open
-                        </h5>
+                        </a>
                         <img class="product__picture" src="./images/product-interface3.png" alt="Продукт">
-                    </section>
-                    <section class="product__block__element">
-                        <h5 class="product__open section__heading overlay">
+                    </li>
+                    <li class="product__overlay">
+                        <a class="product__overlay-opened section__heading" href="#">
                             open
-                        </h5>
+                        </a>
                         <img class="product__picture" src="./images/product-mockup2.png" alt="Продукт">
-                    </section>
-                    <section class="product__block__element">
-                        <h5 class="product__open section__heading overlay">
+                    </li>
+                    <li class="product__overlay">
+                        <a class="product__overlay-opened section__heading" href="#">
                             open
-                        </h5>
+                        </a>
                         <img class="product__picture" src="./images/product-print2.png" alt="Продукт">
-                    </section>
-                    <!--
-                <section class="product__block__element">
-                    <h5 class="product__open section__heading">
-                        open
-                    </h5>
-                    <img class="product__picture" src="./images/product-interface2.png" alt="Продукт">
-                </section>
-                <section class="product__block__element">
-                    <h5 class="product__open section__heading">
-                        open
-                    </h5>
-                    <img class="product__picture" src="./images/product-print.png" alt="Продукт">
-                </section>
-                -->
-                </div>
-                <div class="product__block__lower">
-                    <section class="product__block__element">
-                        <h5 class="product__open section__heading overlay">
+                    </li>
+                    
+                    <li class="product__overlay">
+                        <a class="product__overlay-opened section__heading" href="#">
                             open
-                        </h5>
+                        </a>
+                        <img class="product__picture" src="./images/product-interface2.png" alt="Продукт">
+                    </li>
+                    <li class="product__overlay">
+                        <a class="product__overlay-opened section__heading" href="#">
+                         open
+                        </a>
+                        <img class="product__picture" src="./images/product-print.png" alt="Продукт">
+                    </li>
+                    <li class="product__overlay">
+                        <a class="product__overlay-opened section__heading" href="#">
+                            open
+                        </a>
                         <img class="product__picture" src="./images/product-mockup1.png" alt="Продукт">
-                    </section>
-                    <section class="product__block__element">
-                        <h5 class="product__open section__heading overlay">
+                    </li>
+                    <li class="product__overlay">
+                        <a class="product__overlay-opened section__heading" href="#">
                             open
-                        </h5>
+                        </a>
                         <img class="product__picture" src="./images/product-mockup3.png" alt="Продукт">
-                    </section>
-                    <section class="product__block__element">
-                        <h5 class="product__open section__heading overlay">
-                            open
-                        </h5>
-                        <img class="product__picture" src="./images/product-web3.png" alt="Продукт">
-                    </section>
-                    <section class="product__block__element">
-                        <h5 class="product__open section__heading overlay">
-                            open
-                        </h5>
-                        <img class="product__picture" src="./images/product-print3.png" alt="Продукт">
-                    </section>
+                    </li>
                     <!--
-                <section class="product__block__element">
-                    <h5 class="product__open section__heading">
-                        open
-                    </h5>
-                    <img class="product__picture" src="./images/product-web1.png" alt="Продукт">
-                </section>
-                <section class="product__block__element">
-                    <h5 class="product__open section__heading">
-                        open
-                    </h5>
-                    <img class="product__picture" src="./images/product-web2.png" alt="Продукт">
-                </section>
-                -->
-                </div>
+                    <li class="product__overlay">
+                        <a class="product__overlay-opened section__heading" href="#">
+                            open
+                        </a>
+                        <img class="product__picture" src="./images/product-web3.png" alt="Продукт">
+                    </li>
+                    <li class="product__overlay">
+                        <a class="product__overlay-opened section__heading" href="#">
+                            open
+                        </a>
+                        <img class="product__picture" src="./images/product-print3.png" alt="Продукт">
+                    </li>
+                    <li class="product__overlay">
+                        <a class="product__overlay-opened section__heading" href="#">
+                            open
+                        </a>
+                        <img class="product__picture" src="./images/product-web1.png" alt="Продукт">
+                    </li>
+                    <li class="product__overlay">
+                        <a class="product__overlay-opened section__heading" href="#">
+                            open
+                        </a>
+                        <img class="product__picture" src="./images/product-web2.png" alt="Продукт">
+                    </li>
+                    -->
+                </ul>
             </div>
         </section>
         <!-- PART 5 PART 5 PART 5 PART 5 PART 5 PART 5 PART 5 PART 5 PART 5 PART 5 PART 5 PART 5 PART 5 PART 5 PART 5 PART 5 PART 5 PART 5 -->
@@ -249,7 +249,7 @@
                 <h2 class="team__appellation section__heading">
                     Meet our team
                 </h2>
-                <p class="team__description intro__text">
+                <p class="team__description section__text">
                     Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed dooing eiusmod tempor
                     incididut labore Ui / Ux , print template.
                 </p>
@@ -259,7 +259,7 @@
                 <div class="team__main-content">
                     <div class="team__main-info">
                         <span class="team__selected-name">mark waugh</span>
-                        <p class="team__characteristics intro__text">Lorem ipsum dolor sit amet, consectetur adipis cing
+                        <p class="team__characteristics section__text">Lorem ipsum dolor sit amet, consectetur adipis cing
                             elit,
                             sed dooing eiusmod tempor incididut labore Ui / Ux , print template.</p>
                         <div class="team__selected-links">
@@ -295,20 +295,20 @@
             <div class="subscribe__header">
                 <h2 class="subscribe__heading section__heading">Design tips, tricks, and freebies. Delivered weekly.
                 </h2>
-                <p class="subscribe__text intro__text">Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do
+                <p class="subscribe__text section__text">Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do
                     eiusmod.</p>
             </div>
             <form class="subscribe__form">
                 <input type=email name="email" placeholder="Email Address..." required class="subscribe__input">
-                <button type="submit" class="subscribe__button">subscribe</button>
+                <button type="submit" class="subscribe__button section__button_red">subscribe</button>
             </form>
         </section>
         <!-- PART 7 PART 7 PART 7 PART 7 PART 7 PART 7 PART 7 PART 7 PART 7 PART 7 PART 7 PART 7 PART 7 PART 7 PART 7 PART 7 PART 7 PART 7 -->
-        <div class="connection-contacts">
+        <section class="connection">
             <div class="connection__block_left">
                 <div class="connection__header">
                     <h2 class="connection__heading section__heading">get in touch</h2>
-                    <p class="section__text intro__text" id="contacts">Lorem ipsum dolor sit amet, consectetur adipis
+                    <p class="connection__text section__text" id="contacts">Lorem ipsum dolor sit amet, consectetur adipis
                         cing elit,
                         sed do eiusmod tempor incididunt ut labore et.ur adipis cing elit, sed do eiusmod tempor
                         incididunt ut labore et.
@@ -323,16 +323,16 @@
                         required>
                     <textarea class="connection__input connection__message" name="message"
                         placeholder="Type your message" cols="30" rows="5"></textarea>
-                    <button class="connection__button button-login_red" type="submit">send message</button>
+                    <button class="connection__button section__button_red" type="submit">send message</button>
                 </form>
             </div>
             <div class="connection__block_right">
                 <h3 class="connection__info">contact info</h3>
-                <p class="connection__info__text intro__text">Jalalabad 24 / A, Ambaarkhana, Sylhet, Bangladesh</p>
-                <p class="connection__info__text intro__text">redwan@deviserweb.com</p>
-                <p class="connection__info__number intro__text">(+88) 017 617 46373</p>
+                <p class="connection__info__text section__text">Jalalabad 24 / A, Ambaarkhana, Sylhet, Bangladesh</p>
+                <p class="connection__info__text section__text">redwan@deviserweb.com</p>
+                <p class="connection__info__number section__text">(+88) 017 617 46373</p>
             </div>
-        </div>
+        </section>
     </main>
     <!-- PART 8 PART 8 PART 8 PART 8 PART 8 PART 8 PART 8 PART 8 PART 8 PART 8 PART 8 PART 8 PART 8 PART 8 PART 8 PART 8 PART 8 PART 8 -->
     <footer class="footer">
