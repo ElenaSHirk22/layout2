@@ -12,6 +12,7 @@ linkMenu.forEach(link => {
 })
 
 function closeNavigation() {
+	interdictionScroll.classList.remove('interdiction-scroll');
 	burgerContacts.classList.remove('initial__content-contact-lower_opened');
     burgerMenu.classList.remove('navigation_opened');
     navigationButtonBurger.classList.remove('navigation__button-burger_opened');

@@ -36,12 +36,9 @@ html {
     background-color: var(--color-primary);
 }
 
-/* При обновлении видно дефрмированную кнопку, сползающую вниз в левм нижнем углу экрана */
+
 .initial__content-contact-lower {
     transform: translateX(150%);
-/*
-    display: none;
-*/
     overflow-y: hidden;
     flex-wrap: wrap;
     align-content: center;
@@ -77,9 +74,6 @@ html {
 .navigation__menu {
     display: flex;
     flex-wrap: wrap;
-    /*
-    transform: scale(2) translate(0px, -50%);
-    */
 }
 
 .menu {
@@ -353,15 +347,7 @@ html {
     font-size: 24px;
     margin-bottom: 12.5px;
 }
-/*
-.service__heading::before {
-    display: block;
-    width: 100%;
-    max-width: 40px;
-    height: 40px;
-    margin-bottom: 27px;
-}
-*/
+
 .section__heading {
     font-family: var(--font-fonts2);
     width: 100%;
@@ -398,35 +384,6 @@ html {
     max-width: 290px;
     min-height: 40px;
     padding-bottom: 32px;
-}
-
-.service__img-mgt, 
-.service__img-lb,
-.service__img-anmtn {
-    transition: all 2s;
-    animation-iteration-count: infinite;
-    
-}
-
-.service__img-uud {
-    
-}
-
-.service__img-mgt:hover {
-    animation-direction: alternate;
-    transform: rotate(360deg);
-}
-
-.service__img-uud:hover {
-    animation-timing-function: linear;
-}
-
-.service__img-lb::after::before {
-    
-}
-
-.service__img-anmtn::after::before {
-    
 }
 
 /* Feature-products */
@@ -812,12 +769,7 @@ html {
     margin-top: 0;
     text-transform: uppercase;
 }
-/*
-.subscribe__button:hover {
-    cursor: pointer;
-    background-color: rgba(255, 45, 45, 0.3);
-}
-*/
+
 /* Connection-contacts */
 
 .connection {
@@ -1331,9 +1283,6 @@ html {
 
     .navigation {
         transform: translateX(120%);
-        /*
-        display: none;
-        */
         position: fixed;
         margin-top: 90px;
         top: 0;
