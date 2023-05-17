@@ -198,7 +198,6 @@ html {
     width: 100%;
     max-width: 551px;
     height: 100%;
-    min-height: 356px;
 }
 
 .intro__heading {
@@ -211,6 +210,24 @@ html {
     letter-spacing: 1.5px;
     text-transform: uppercase;
     margin-bottom: 19px;
+}
+
+.intro__iframe {
+    width: 100%;
+    height: 0;
+    position: relative;
+    padding-top: 64.6%;
+}
+
+.intro__iframe iframe {
+    width: 100%;
+	height: 100%;
+    top: 0;
+	position: absolute;
+}
+
+.section_1 {
+    max-width: 1250px;
 }
 
 .section__text {
@@ -254,16 +271,6 @@ html {
     box-shadow: inset 5px 5px 5px rgba(84, 72, 72, 0.698);
 }
 
-.square_red {
-    display: flex;
-    width: 100%;
-    max-width: 551px;
-    height: 100%;
-    min-height: 356px;
-    background-color: rgba(255, 34, 34, 1);
-    box-shadow: inset 0 0 500px rgba(0, 0, 0, 0.300), 0 0 100px rgba(0, 0, 0, 0.318);
-}
-
 .centering {
     display: flex;
     flex-wrap: wrap;
@@ -273,16 +280,6 @@ html {
     max-width: 551px;
     height: 100%;
     min-height: 356px;
-}
-
-.square_white {
-    display: flex;
-    width: 100%;
-    max-width: 69px;
-    height: 100%;
-    min-height: 70px;
-    background-color: rgba(246, 242, 242, 0.88);
-    box-shadow: 0 0 50px rgba(0, 0, 0, 0.13);
 }
 
 .section {
@@ -595,6 +592,12 @@ html {
 }
 
 .team__selected_photo {
+    width: 100%;
+    max-width: 310px;
+    height: 100%;
+    min-height: 458px;
+    object-fit: cover;
+    
     flex-shrink: 0;
     margin-left: 180px;
     background-color: rgba(255, 59, 59, 1);
@@ -700,6 +703,7 @@ html {
     height: 218px;
     background-color: rgba(255, 59, 59, 1);
     box-shadow: 0 5px 5px rgba(84, 72, 72, 0.4);
+    object-fit: cover;
 }
 
 /* Subscribe */
@@ -995,9 +999,7 @@ html {
         padding: 0 10px;
     }
     
-    .intro__heading {
-        text-align: center;
-    }
+    
     
     .intro__content_right {
         width: 100%;
@@ -1164,6 +1166,12 @@ html {
         margin: 0 auto;
     }
 }  
+
+@media screen and (max-width: 1190px) {
+    .intro__heading {
+        text-align: center;
+    }
+}
 
 @media screen and (max-width: 880px) {
     .footer__text {
