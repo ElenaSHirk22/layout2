@@ -90,6 +90,7 @@ html {
     align-items: stretch;
     justify-content: center;
     min-height: 90px;
+    transition: all 0.5s;
 }
 
 .menu__item:hover {
@@ -143,6 +144,7 @@ html {
 
 .navigation__button-burger:hover {
     opacity: 0.8;
+
 }
 
 /* Inital-acquaintance */
@@ -174,10 +176,12 @@ html {
     border-radius: 50%;
     background-color: rgba(224, 224, 224, 1);
     background-image: url(../images/up.svg);
+    transition: all 0.5s;
 }
 
 #initial__content-up-button:hover {
     cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.15);
 }
 
 .intro {
@@ -198,6 +202,7 @@ html {
     width: 100%;
     max-width: 551px;
     height: 100%;
+    box-shadow: inset 0 0 500px rgba(0, 0, 0, 0.300), 0 0 100px rgba(0, 0, 0, 0.318);
 }
 
 .intro__heading {
@@ -259,6 +264,7 @@ html {
     border: none;
     color: var(--color-tertiary);
     background-color: var(--color-quaternary);
+    transition: all 0.5s;
 }
 
 .section__button_red:hover {
@@ -979,12 +985,22 @@ html {
 }
 
 .footer__social-lincs {
+    display: flex;
     padding-right: 128px;
     padding-top: 32px;
 }
 
 .footer__link {
+    display: flex;
     margin-right: 18px;
+    transition: all 0.5s;
+    z-index: 2;
+    border-radius: 50%;
+}
+
+.footer__link:hover {
+    box-shadow: 0 0  10px rgba(255, 45, 45, 1);
+    cursor: pointer;
 }
 
 /* Responsive */
@@ -993,7 +1009,6 @@ html {
     .intro__content_left {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
         box-sizing: border-box;
         margin-right: 0;
         padding: 0 10px;
@@ -1168,6 +1183,10 @@ html {
 }  
 
 @media screen and (max-width: 1190px) {
+    .intro__content_left {
+        justify-content: center;
+    }
+
     .intro__heading {
         text-align: center;
     }
