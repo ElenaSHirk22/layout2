@@ -1,3 +1,0 @@
-new Swiper('.product', {
-    
-});

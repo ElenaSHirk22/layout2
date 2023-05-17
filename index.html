@@ -7,51 +7,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href=".//index.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <script async src="./js/script.js"></script>
     <script async src="./js/javascript.js"></script>
 </head>
 <!-- PART 1 PART 1 PART 1 PART 1 PART 1 PART 1 PART 1 PART 1 PART 1 PART 1 PART 1 PART 1 PART 1 PART 1 PART 1 PART 1 PART 1 PART 1 -->
 <!--navigation_opened-->
 <body class="page">
-    <div class="page__navigation page__navigation_grey">
+    <div class="page__navigation page__navigation_grey" >
         <header class="navigation">
             <nav class="navigation__menu">
                 <ul class="menu navigation__menu">
                     <li class="menu__item">
-                        <a class="menu__link" href="#">
+                        <a data-goto=".section_1" class="menu__link" href="#">
                             Home
                         </a>
                     </li>
                     <li class="menu__item">
-                        <a class="menu__link" href="#">
+                        <!-- products -->
+                        <a data-goto=".section_2" class="menu__link" href="#">
                             Portfolio
                         </a>
                     </li>
                     <li class="menu__item">
-                        <a class="menu__link" href="#">
+                        <!-- services -->
+                        <a data-goto=".section_3" class="menu__link" href="#">
                             About us
                         </a>
                     </li>
                     <li class="menu__item">
-                        <a class="menu__link" href="#">
+                        <!-- contact -->
+                        <a data-goto=".section_4" class="menu__link" href="#">
                             Contact
                         </a>
                     </li>
                 </ul>
-            </nav>   
+            </nav> 
         </header>
         <div class="navigation__button">
-            <button type="button" class="navigation__button-burger navigation__button-burger_opened">
-                <img class="navigation__button-img" src="./images/burger_1.svg" alt="Кнопка-бургер">
+            <button type="button" class="navigation__button-burger navigation__button-burger_close">
             </button>
         </div>
     </div>
     <!-- PART 2 PART 1 PART 2 PART 1 PART 2 PART 2 PART 2 PART 2 PART 2 PART 2 PART 2 PART 2 PART 2 PART 2 PART 2 PART 2 PART 2 PART 2 -->
     <main class="initial__content">
         <div class="initial__acquaintance page__navigation_grey">
-            <section class="intro section">
+            <!-- id="s-intro -->
+            <section class="intro section section_1">
                 <div class="intro__content_left">
                     <h1 class="intro__heading">
                         our strong organaisation
@@ -77,9 +77,10 @@
             </section>
         </div>
         <!-- PART 3 PART 3 PART 3 PART 3 PART 3 PART 3 PART 3 PART 3 PART 3 PART 3 PART 3 PART 3 PART 3 PART 3 PART 3 PART 3 PART 3 PART 3 -->
-        <section class="section services">
+        <!-- id="services" -->
+        <section class="section section_3 services">
             <div class="services__lead_left">
-                <h2 class="service__heading section__heading">
+                <h2 class="service__appellation section__heading">
                     do you know we can provide for you ?
                 </h2>
                 <p class="services__text section__text ">
@@ -93,7 +94,10 @@
             </div>
             <div class="services__lead_right">
                 <section class="services">
-                    <h3 class="service__heading service__heading_mgt">
+                    <div class="service__img">
+                        <img class="service__img-mgt" src="./images/Combined1.svg" alt="Сервис-изображение">
+                    </div>
+                    <h3 class="service__heading">
                         Management
                     </h3>
                     <p class="service__text-left">
@@ -102,7 +106,10 @@
                     </p>
                 </section>
                 <section class="services">
-                    <h3 class="service__heading service__heading_uud">
+                    <div class="service__img">
+                        <img class="service__img-uud" src="./images/Combined2.svg" alt="Сервис-изображение">
+                    </div>
+                    <h3 class="service__heading">
                         UI /UX Design
                     </h3>
                     <p class="service__text-right">
@@ -111,7 +118,10 @@
                     </p>
                 </section>
                 <section class="services">
-                    <h3 class="service__heading service__heading_lb">
+                    <div class="service__img">
+                        <img class="service__img-lb" src="./images/Combined3.svg" alt="Сервис-изображение">
+                    </div>
+                    <h3 class="service__heading">
                         Logo / Branding
                     </h3>
                     <p class="service__text-left">
@@ -120,7 +130,10 @@
                     </p>
                 </section>
                 <section class="services">
-                    <h3 class="service__heading service__heading_anmtn">
+                    <div class="service__img">
+                        <img class="service__img-anmtn" src="./images/Combined4.svg" alt="Сервис-изображение">
+                    </div>
+                    <h3 class="service__heading">
                         Animation
                     </h3>
                     <p class="service__text-right">
@@ -131,7 +144,8 @@
             </div>
         </section>
         <!-- PART 4 PART 4 PART 4 PART 4 PART 4 PART 4 PART 4 PART 4 PART 4 PART 4 PART 4 PART 4 PART 4 PART 4 PART 4 PART 4 PART 4 PART 4 -->
-        <section class="section feature">
+        <!-- id="products" -->
+        <section class="section section_2 feature">
             <div class="feature__products">
                 <hr class="feature__line">
                 <h2 class="feature__appellation section__heading">
@@ -144,104 +158,106 @@
                 <hr class="feature__line_red">
             </div>
             <ul class="products__type">
-                <li class="product__item service__heading">
+                <li class="product__item service__heading" data-id="all">
                     <a class="product__link" href="#">
                         ALL
                     </a>
                 </li>
-                <li class="product__item service__heading">
+                <li class="product__item service__heading" data-id="print">
                     <a class="product__link" href="#">
                         PRINT TEMPLATE
                     </a>
                 </li>
-                <li class="product__item service__heading">
+                <li class="product__item service__heading" data-id="web">
                     <a class="product__link" href="#">
                         WEB TEMPLATE
                     </a>
                 </li>
-                <li class="product__item service__heading">
+                <li class="product__item service__heading" data-id="interface">
                     <a class="product__link" href="#">
                         USER INTERFACE
                     </a>
                 </li>
-                <li class="product__item service__heading">
+                <li class="product__item service__heading" data-id="mockup">
                     <a class="product__link" href="#">
                         MOCK-UP
                     </a>
                 </li>
             </ul>
             <!-- Не проработан swiper(в разработке) -->
-            <div class="product">
+            <div class="product" >
                 <ul class="product__content">
-                    <li class="product__overlay">
-                        <a class="product__overlay-opened section__heading" href="#">
+                    <li class="product__overlay ">
+                        <a class="product__overlay-opened section__heading interface" href="#">
                             open
                         </a>
                         <img class="product__picture" src="./images/product-interface1.png" alt="Продукт">
                     </li>
-                    <li class="product__overlay">
-                        <a class="product__overlay-opened section__heading" href="#">
+                    <li class="product__overlay ">
+                        <a class="product__overlay-opened section__heading interface" href="#">
                             open
                         </a>
                         <img class="product__picture" src="./images/product-interface3.png" alt="Продукт">
                     </li>
-                    <li class="product__overlay">
-                        <a class="product__overlay-opened section__heading" href="#">
+                    <li class="product__overlay ">
+                        <a class="product__overlay-opened section__heading mockup" href="#">
                             open
                         </a>
                         <img class="product__picture" src="./images/product-mockup2.png" alt="Продукт">
                     </li>
-                    <li class="product__overlay">
-                        <a class="product__overlay-opened section__heading" href="#">
+                    <li class="product__overlay ">
+                        <a class="product__overlay-opened section__heading print" href="#">
                             open
                         </a>
                         <img class="product__picture" src="./images/product-print2.png" alt="Продукт">
                     </li>
                     
-                    <li class="product__overlay">
-                        <a class="product__overlay-opened section__heading" href="#">
+                    <li class="product__overlay ">
+                        <a class="product__overlay-opened section__heading interface" href="#">
                             open
                         </a>
                         <img class="product__picture" src="./images/product-interface2.png" alt="Продукт">
                     </li>
-                    <li class="product__overlay">
-                        <a class="product__overlay-opened section__heading" href="#">
+                    <li class="product__overlay ">
+                        <a class="product__overlay-opened section__heading print" href="#">
                          open
                         </a>
                         <img class="product__picture" src="./images/product-print.png" alt="Продукт">
                     </li>
-                    <li class="product__overlay">
+                    
+                    <li class="product__overlay ">
+                        <a class="product__overlay-opened section__heading mockup" href="#">
+                            open
+                        </a>
+                        <img class="product__picture" src="./images/product-mockup3.png" alt="Продукт">
+                    </li>
+                    
+                    <li class="product__overlay ">
+                        <a class="product__overlay-opened section__heading web" href="#">
+                            open
+                        </a>
+                        <img class="product__picture" src="./images/product-web3.png" alt="Продукт">
+                    </li>
+                    <!--
+                    <li class="product__overlay mockup">
                         <a class="product__overlay-opened section__heading" href="#">
                             open
                         </a>
                         <img class="product__picture" src="./images/product-mockup1.png" alt="Продукт">
                     </li>
-                    <li class="product__overlay">
-                        <a class="product__overlay-opened section__heading" href="#">
-                            open
-                        </a>
-                        <img class="product__picture" src="./images/product-mockup3.png" alt="Продукт">
-                    </li>
-                    <!--
-                    <li class="product__overlay">
-                        <a class="product__overlay-opened section__heading" href="#">
-                            open
-                        </a>
-                        <img class="product__picture" src="./images/product-web3.png" alt="Продукт">
-                    </li>
-                    <li class="product__overlay">
+                    <li class="product__overlay print">
                         <a class="product__overlay-opened section__heading" href="#">
                             open
                         </a>
                         <img class="product__picture" src="./images/product-print3.png" alt="Продукт">
                     </li>
-                    <li class="product__overlay">
+                    <li class="product__overlay web">
                         <a class="product__overlay-opened section__heading" href="#">
                             open
                         </a>
                         <img class="product__picture" src="./images/product-web1.png" alt="Продукт">
                     </li>
-                    <li class="product__overlay">
+                    <li class="product__overlay web">
                         <a class="product__overlay-opened section__heading" href="#">
                             open
                         </a>
@@ -312,11 +328,12 @@
             </form>
         </section>
         <!-- PART 7 PART 7 PART 7 PART 7 PART 7 PART 7 PART 7 PART 7 PART 7 PART 7 PART 7 PART 7 PART 7 PART 7 PART 7 PART 7 PART 7 PART 7 -->
-        <section class="connection">
+        <!-- id="contact" -->
+        <section class="connection section_4">
             <div class="connection__block_left">
                 <div class="connection__header">
                     <h2 class="connection__heading section__heading">get in touch</h2>
-                    <p class="connection__text section__text" id="contacts">Lorem ipsum dolor sit amet, consectetur adipis
+                    <p class="connection__text section__text">Lorem ipsum dolor sit amet, consectetur adipis
                         cing elit,
                         sed do eiusmod tempor incididunt ut labore et.ur adipis cing elit, sed do eiusmod tempor
                         incididunt ut labore et.
@@ -341,6 +358,14 @@
                 <p class="connection__info__number section__text">(+88) 017 617 46373</p>
             </div>
         </section>
+        <div class="initial__content-up">
+            <a class="initial__content-up-button" href="#" id="initial__content-up-button" title="Наверх"></a>
+        </div>
+        <div class="initial__content-contact-lower">
+            <button type="button" class="initial__content-contact-button section__button_red">
+                Contacts Us
+            </button>
+        </div> 
     </main>
     <!-- PART 8 PART 8 PART 8 PART 8 PART 8 PART 8 PART 8 PART 8 PART 8 PART 8 PART 8 PART 8 PART 8 PART 8 PART 8 PART 8 PART 8 PART 8 -->
     <footer class="footer">
